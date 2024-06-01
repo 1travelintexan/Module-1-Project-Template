@@ -12,9 +12,9 @@ const CHOICES = fs.readdirSync(`${__dirname}/templates`);
 
 const QUESTIONS = [
   {
-    name: "project-choice",
+    name: "project-type-choice",
     type: "list",
-    message: "What project template would you like to generate?",
+    message: "What game type do you want?",
     choices: CHOICES,
   },
   {
@@ -30,7 +30,7 @@ const QUESTIONS = [
 ];
 
 inquirer.prompt(QUESTIONS).then((answers) => {
-  const projectChoice = answers["project-choice"];
+  const projectChoice = answers["project-type-choice"];
   const projectName = answers["project-name"];
   const templatePath = `${__dirname}/templates/${projectChoice}`;
 
