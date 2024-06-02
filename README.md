@@ -2,7 +2,8 @@
 
 ## This CLI is to help future Ironhackers template their module 1 projects.
 
-It creates folder structures and has helpful comments for multiple game types. (Top to Bottom, Right to Left and Dino Jumping)
+It creates folder structures and has helpful comments for multiple game types.
+(Top to Bottom, Right to Left and Dino Jumping)
 
 ## Hopefully this package helps you on your journey to becoming to best developer that you can be!
 
@@ -26,7 +27,7 @@ npm install - g iron-game
 iron-game
 ```
 
-![Bootcamp](https://media2.giphy.com/media/3o6oztoQJhfqh93jCE/giphy.gif?cid=ecf05e471qrmiigw1t8kmo7krnqnpxmj9f2yzx5d8rkqn5oh&ep=v1_gifs_related&rid=giphy.gif&ct=g)
+![Bootcamp](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeGJuaHJobHg4Y2gwODJsbXIwOW4wNDJqanNjd2M0eDNkdDAyazdiZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/gYWeVOiMmbg3kzCTq5/giphy.webp)
 
 Here is the source code [Iron-Game](https://github.com/1travelintexan/Module-1-Project-Template)
 Here is the link to npm [Iron-Game](https://www.npmjs.com/package/iron-game)
