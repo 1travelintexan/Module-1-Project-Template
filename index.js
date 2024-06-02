@@ -33,7 +33,7 @@ const QUESTIONS = [
     },
   },
 ];
-const sleep = (ms = 2500) => new Promise((r) => setTimeout(r, ms));
+const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
 async function ironhackBanner() {
   const msg = "Iron - Game";
   figlet(msg, (err, data) => {
