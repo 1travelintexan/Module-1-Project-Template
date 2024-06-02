@@ -1,5 +1,3 @@
-# Ironhack Web Dev Boot camp Presents
-
 # Iron-Game
 
 ## This CLI is to help future Ironhackers template their module 1 projects.
@@ -9,16 +7,29 @@ It creates folder structures and has helpful comments for multiple game types. (
 ## Hopefully this package helps you on your journey to becoming to best developer that you can be!
 
 <br>
-## Just remember that you are not alone and to always ask more questions
+
+## Just remember that you are not alone, Ape together strong!
+
+```
+npx iron-game
+```
+
+## or
+
+```
+npm install - g iron-game
+```
+
+### This will globally install the package on your computer so you only need to run the package like this
+
+```
+iron-game
+```
 
 ![Bootcamp](https://media2.giphy.com/media/3o6oztoQJhfqh93jCE/giphy.gif?cid=ecf05e471qrmiigw1t8kmo7krnqnpxmj9f2yzx5d8rkqn5oh&ep=v1_gifs_related&rid=giphy.gif&ct=g)
 
 Here is the source code [Iron-Game](https://github.com/1travelintexan/Module-1-Project-Template)
 Here is the link to npm [Iron-Game](https://www.npmjs.com/package/iron-game)
-
-```
-npx iron-game
-```
 
 ## Packages Used
 
