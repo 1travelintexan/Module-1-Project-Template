@@ -34,9 +34,8 @@ const QUESTIONS = [
   },
 ];
 const sleep = (ms = 2000) => new Promise((r) => setTimeout(r, ms));
-async function ironhackBanner() {
-  const msg = "Iron - Game";
-  figlet(msg, (err, data) => {
+async function ironhackBanner(message) {
+  figlet(message, (err, data) => {
     console.log(gradient.pastel(data));
   });
 }
@@ -44,10 +43,10 @@ async function welcomeTitle() {
   const rainbowTitle = chalkAnimation.rainbow(
     `Welcome Ironhacker! Let's build something cool`
   );
-  await sleep();
+  await sleep(2500);
   rainbowTitle.stop();
-  console.log(chalk.bgBlueBright(`First I need to know a few things`));
-  await sleep();
+  console.log(chalk.bgBlueBright(`First things first...`));
+  await sleep(1000);
 }
 
 async function prompts() {
@@ -59,20 +58,37 @@ async function prompts() {
   const spinner = createSpinner("Creating your folder structure...").start();
   await sleep();
 
-  chalkAnimation.neon(
-    `
-    ***********remember to read all the comments! They are there to help :)***********`
-  );
   spinner.success({
-    text: `Here is the project template that you requested,
-    Now you can... 
-
-    cd into ${projectName} and start coding :)`,
+    text: `Here is your project template folder,
+  Now you can...
+ `,
   });
 
+  const nextSteps = chalkAnimation.pulse(` 
+cd ${projectName} 
+and start coding`);
+  await sleep();
+  nextSteps.stop();
   createDirectoryContents(templatePath, projectName);
+  const commentBanner = chalkAnimation.neon(
+    `
+    ***********  Remember to read all the comments! They are there to help :)  ***********`
+  );
+  await sleep(4000);
+  commentBanner.stop();
+  console.log(
+    gradient.pastel(
+      figlet.textSync("H a v e  f u n !", {
+        font: "Dancing Font",
+        horizontalLayout: "default",
+        verticalLayout: "default",
+        width: 220,
+        whitespaceBreak: true,
+      })
+    )
+  );
 }
-await ironhackBanner();
+await ironhackBanner("Iron - Game");
 await sleep(1000);
 await welcomeTitle();
 await prompts();
